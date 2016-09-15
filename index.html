@@ -20,55 +20,79 @@
         </nav>
     </header>
 
+<aside>
+        <form>
+            <fieldset>
+                <legend>Filter op</legend>
+                <input type="radio" name="filter" value="populair" id="populair" checked>
+                <label for="populair">Populair</label>
+                <br>
+                <input type="radio" name="filter" value="nieuw" id="nieuw">
+                <label for="nieuw">Nieuw</label>
+            </fieldset>
+        </form>
+        <a href=#>Meer opties</a>
+        <form>
+            <fieldset>
+                <legend>Lengte verhaal</legend>
+                <input type="range" name="points" min="1" max="10">
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Categorieën</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="categorie" value="humor" id="humor">
+                        <label for="humor">Humor</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="drama" id="drama">
+                        <label for="drama">Drama</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="thriller" id="thriller">
+                        <label for="thriller">Thriller</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="fictie" id="fictie">
+                        <label for="fictie">Fictie</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="avontuur" id="avontuur">
+                        <label for="avontuur">Avontuur</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="historie" id="historie">
+                        <label for="historie">Historie</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="kids" id="kids">
+                        <label for="kids">Kids</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="sprookjes" id="sprookjes">
+                        <label for="sprookjes">Sprookjes</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="scifi" id="scifi">
+                        <label for="scifi">Sci-fi</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="categorie" value="gedichten" id="gedichten">
+                        <label for="gedichten">Gedichten</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </aside>
+    
     <main>
         <section id="spotlight">
             <h2>Titel</h2>
             <p>Tekst</p>
         </section>
 
-        <nav id="personal">
-            <ul>
-                <li>Verder lezen</li>
-                <li>Favorieten</li>
-                <li>Gelezen</li>
-            </ul>
-        </nav>
-
-        <section id='filtsort'>
-            <h6>Filter en Sorteer</h6>
-            <p>Kies een verhaal</p>
-            <form>
-                <fieldset>stuff</fieldset>
-            </form>
-            <p>Sorteer op</p>
-            <form>
-                <fieldset>stuff</fieldset>
-            </form>
-        </section>
-
-        <nav id="recent">
-            <ul>
-                <li><a href="stories.html">Verhaal 1 - door X</a></li>
-                <li><a href="stories.html">Verhaal 2 - door Y</a></li>
-                <li><a href="stories.html">Verhaal 3 - door Z</a></li>
-            </ul>
-        </nav>
-
-        <nav id="rated">
-            <ul>
-                <li><a href="stories.html">Verhaal 4 - door A</a></li>
-                <li><a href="stories.html">Verhaal 5 - door B</a></li>
-                <li><a href="stories.html">Verhaal 6 - door C</a></li>
-            </ul>
-        </nav>
-
-        <nav id="friends">
-            <ul>
-                <li><a href="stories.html">Verhaal 7 - door M</a></li>
-                <li><a href="stories.html">Verhaal 8 - door N</a></li>
-                <li><a href="stories.html">Verhaal 9 - door O</a></li>
-            </ul>
-        </nav>
 
         <section id="stories">
             <h3>Kies een verhaal dat je wilt lezen!</h3>
@@ -131,6 +155,38 @@
                 </article>
             </a>
         </section>
+        
+                <nav id="personal">
+            <ul>
+                <li>Verder lezen</li>
+                <li>Favorieten</li>
+                <li>Gelezen</li>
+            </ul>
+        </nav>
+
+        <nav id="recent">
+            <ul>
+                <li><a href="stories.html">Verhaal 1 - door X</a></li>
+                <li><a href="stories.html">Verhaal 2 - door Y</a></li>
+                <li><a href="stories.html">Verhaal 3 - door Z</a></li>
+            </ul>
+        </nav>
+
+        <nav id="rated">
+            <ul>
+                <li><a href="stories.html">Verhaal 4 - door A</a></li>
+                <li><a href="stories.html">Verhaal 5 - door B</a></li>
+                <li><a href="stories.html">Verhaal 6 - door C</a></li>
+            </ul>
+        </nav>
+
+        <nav id="friends">
+            <ul>
+                <li><a href="stories.html">Verhaal 7 - door M</a></li>
+                <li><a href="stories.html">Verhaal 8 - door N</a></li>
+                <li><a href="stories.html">Verhaal 9 - door O</a></li>
+            </ul>
+        </nav>
     </main>
 </body>
 </html>
