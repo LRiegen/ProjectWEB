@@ -13,8 +13,9 @@
         <nav id="navmain">
 <!-- Used Log ON to link to the registration page. Should be log in (and if you don't have an account yet, that should link to registration page from there.-->
         <form>
-            <label>Zoeken <input type="search" placeholder="Zoeken"></label>
-            <label for="zoek"><input type="submit" src="images/zoek.jpg" value="zoek"></label>
+<!-- Thanks Victor Zumpolle to helping me fix the thing below!-->
+            <label for="zoek">Zoeken</label><input id="zoek" type="search" required placeholder="Zoeken">
+                <input type="image" src="images/zoek.jpg" alt="Zoek">
         </form>
         <a href="logon.html"><img src="images/login.jpg" alt="login">Registreer</a>
         </nav>
@@ -38,94 +39,116 @@
             </fieldset>
 
         </form>
-    </aside>
 
-       <main>
-        <section id="spotlight">
-            <h2>Titel</h2>
-            <p>Tekst</p>
-        </section>
-
-        <nav id="personal">
+                <nav id="personal">
             <ul>
-                <li>Verder lezen</li>
-                <li>Favorieten</li>
-                <li>Gelezen</li>
+                <li><a href="stories/stories87.html">Verder lezen</a></li>
+                <li><a href="stories/stories90.html">Favorieten</a></li>
+                <li><a href="stories/stories91.html">Gelezen</a></li>
             </ul>
         </nav>
-
+<!-- Keep this or nah? I say nah.
         <nav id="recent">
             <ul>
-                <li><a href="stories.html">Verhaal 1 - door X</a></li>
-                <li><a href="stories.html">Verhaal 2 - door Y</a></li>
-                <li><a href="stories.html">Verhaal 3 - door Z</a></li>
+                <li><a href="stories97.html">Freudiaans</a></li>
+                <li><a href="stories96.html">Steenkolenfrans</a></li>
+                <li><a href="stories95.html">Martin Bril</a></li>
             </ul>
         </nav>
 
         <nav id="rated">
             <ul>
-                <li><a href="stories.html">Verhaal 4 - door A</a></li>
-                <li><a href="stories.html">Verhaal 5 - door B</a></li>
-                <li><a href="stories.html">Verhaal 6 - door C</a></li>
+                <li><a href="stories98.html">Beroemd</a></li>
+                <li><a href="stories93.html">Nico Dijkshoorn die Mart Smeets imiteert</a></li>
+                <li><a href="stories92.html">Vergezocht</a></li>
             </ul>
         </nav>
 
         <nav id="friends">
             <ul>
-                <li><a href="stories.html">Verhaal 7 - door M</a></li>
-                <li><a href="stories.html">Verhaal 8 - door N</a></li>
-                <li><a href="stories.html">Verhaal 9 - door O</a></li>
+                <li><a href="stories97.html">Freudiaans</a></li>
+                <li><a href="stories96.html">Steenkolenfrans</a></li>
+                <li><a href="stories95.html">Martin Bril</a></li>
             </ul>
         </nav>
+-->
+    </aside>
 
+       <main>
         <section id="stories">
             <h3>Kies een verhaal dat je wilt lezen!</h3>
-            <a href="story">
+
+            <a href="stories/stories92.html">
                <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Vergezocht</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories91.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Zoon</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories90.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Telegrafisch</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories89.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Zombie</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories88.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Klumperbeven</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories87.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Code</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
+            </a>
+            <a href="stories/stories86.html">
                 <article>
-                    <h2>Titel</h2>
-                    <footer>
-                        <p>naam, <time>2016</time></p>
+                    <h2>Alwetende verteller</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
+                    </footer>
+                </article>
+            </a>
+        </section>
+
+        <section id="spotlight">
+            <h3>Uitgelicht verhaal</h3>
+            <a href="stories/stories86b.html">
+                <article>
+                    <h2>Boers</h2>
+                    <footer class="metadata">
+                        <p>Molovich, <time>2011</time></p>
                     </footer>
                 </article>
             </a>
         </section>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
 
