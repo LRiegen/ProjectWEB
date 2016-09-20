@@ -2,161 +2,51 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Overzicht</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Verhalen</title>
 </head>
 
 <body>
-       <header>
-        <img src=# alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="#"><img src=# alt="Zoeken"></a></li>
-                <li>
-                    <a href=#><img src=# alt="Mijn account"></a>
-                </li>
-            </ul>
+    <header>
+       <img src="images/logo.png" alt='logo website'>
+        <nav id="navmain">
+<!-- Used Log ON to link to the registration page. Should be log in (and if you don't have an account yet, that should link to registration page from there.-->
+        <form>
+            <label>Zoeken <input type="search" placeholder="Zoeken"></label>
+            <label for="zoek"><input type="submit" src="images/zoek.jpg" value="zoek"></label>
+        </form>
+        <a href="logon.html"><img src="images/login.jpg" alt="login">Registreer</a>
         </nav>
     </header>
 
-<aside>
+    <aside>
         <form>
             <fieldset>
-                <legend>Filter op</legend>
-                <input type="radio" name="filter" value="populair" id="populair" checked>
-                <label for="populair">Populair</label>
-                <br>
-                <input type="radio" name="filter" value="nieuw" id="nieuw">
-                <label for="nieuw">Nieuw</label>
+                <legend>Sorteer op:</legend>
+                <input type="radio" name="sorteer" value="populair" checked>
+                <input type="radio" name="sorteer" value="alfabet">
+                <input type="radio" name="sorteer" value="">
+                <input type="submit" value="Sorteer!">
             </fieldset>
-        </form>
-        <a href=#>Meer opties</a>
-        <form>
             <fieldset>
-                <legend>Lengte verhaal</legend>
-                <input type="range" name="points" min="1" max="10">
+                <legend>Filter op:</legend>
+                <input type="checkbox" name="filter" value="avontuur">
+                <input type="checkbox" name="filter" value="fictie">
+                <input type="checkbox" name="filter" value="nonfictie">
+                <input type="submit" value="Filter!">
             </fieldset>
-        </form>
-        <form>
-            <fieldset>
-                <legend>Categorieën</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="categorie" value="humor" id="humor">
-                        <label for="humor">Humor</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="drama" id="drama">
-                        <label for="drama">Drama</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="thriller" id="thriller">
-                        <label for="thriller">Thriller</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="fictie" id="fictie">
-                        <label for="fictie">Fictie</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="avontuur" id="avontuur">
-                        <label for="avontuur">Avontuur</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="historie" id="historie">
-                        <label for="historie">Historie</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="kids" id="kids">
-                        <label for="kids">Kids</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="sprookjes" id="sprookjes">
-                        <label for="sprookjes">Sprookjes</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="scifi" id="scifi">
-                        <label for="scifi">Sci-fi</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="categorie" value="gedichten" id="gedichten">
-                        <label for="gedichten">Gedichten</label>
-                    </li>
-                </ul>
-            </fieldset>
+
         </form>
     </aside>
-    
-    <main>
+
+       <main>
         <section id="spotlight">
             <h2>Titel</h2>
             <p>Tekst</p>
         </section>
 
-
-        <section id="stories">
-            <h3>Kies een verhaal dat je wilt lezen!</h3>
-            <a href="story">
-               <article>
-                    <h2>Titel</h2>
-                    <span>5 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>3 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>3 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>4 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>2 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>7 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-                <article>
-                    <h2>Titel</h2>
-                    <span>99 likes</span>
-                    <img scr="http://i.bnet.com/blogs/121111-facebook_like_thumb.png" alt="duim omhoog">
-                    <footer>
-                        <p>naam, <time>2016</time></p>
-                    </footer>
-                </article>
-            </a>
-        </section>
-        
-                <nav id="personal">
+        <nav id="personal">
             <ul>
                 <li>Verder lezen</li>
                 <li>Favorieten</li>
@@ -187,6 +77,54 @@
                 <li><a href="stories.html">Verhaal 9 - door O</a></li>
             </ul>
         </nav>
+
+        <section id="stories">
+            <h3>Kies een verhaal dat je wilt lezen!</h3>
+            <a href="story">
+               <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+                <article>
+                    <h2>Titel</h2>
+                    <footer>
+                        <p>naam, <time>2016</time></p>
+                    </footer>
+                </article>
+            </a>
+        </section>
     </main>
 </body>
 </html>
