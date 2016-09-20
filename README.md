@@ -15,7 +15,7 @@ Can't decide what I find harder to do. HTML or CSS. Javascript just makes sense 
 
 -- Tuesday 20 september --
 Tried to remove the borrowed file of Vienna. Didn't work out. I don't completely understand how this Github works. Renamed it to something inconspicious (not). 
-FIXED: HTML + JS
-TO DO: CSS + images
+FIXED: HTML + JS |||
+TO DO: CSS + images |||
 
 
