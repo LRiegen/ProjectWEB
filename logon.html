@@ -2,9 +2,9 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Registreer</title>
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registreer</title>
 </head>
 
 <body>
@@ -19,26 +19,32 @@
 
     <main>
         <form>
-            Voornaam:<br>
-            <input type="text" name="firstname"><br>
-            Tussenvoegsel:<br>
-            <input type="text" name="insertion"><br>
-            Achternaam:<br>
-            <input type="text" name="lastname"><br>
-            E-mail:<br>
-            <input type="text" name="email"><br>
-            Straat:<br>
-            <input type="text" name="street"><br>
-            Huisnummer:<br>
-            <input type="text" name="number"><br>
-            Postcode:<br>
-            <input type="text" name="postal"><br>
-            Telefoonnummer:<br>
-            <input type="text" name="phone"><br>
-            Wachtwoord:<br>
-            <input type="text" name="password"><br>
-            <input type="submit" value="Submit">
-</form>
+            <fieldset>
+                <legend>Persoonlijke gegevens</legend>
+                <label>Voornaam:
+                <input type="text" name="firstname"></label>
+                <label>Tussenvoegsel:
+                <input type="text" name="insertion"></label>
+                <label>Achternaam:
+                <input type="text" name="lastname"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label>E-mail:
+                <input type="text" name="email"></label>
+                <label>Straat:
+                <input type="text" name="street"></label>
+                <label>Huisnummer:
+                <input type="text" name="number"></label>
+                <label>Postcode:
+                <input type="text" name="postal"></label>
+                <label>Telefoonnummer:
+                <input type="text" name="phone"></label>
+                <label>Wachtwoord:
+                <input type="text" name="password"></label>
+            </fieldset>
+            <input type="submit" value="Registreer">
+        </form>
     </main>
 </body>
 </html>
