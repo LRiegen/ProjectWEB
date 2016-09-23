@@ -5,7 +5,7 @@ University of Amsterdam - Communication and Multimedia Design.
 Class: v1-03
 Student: 500712882
 Year: 2016/2017
-Date: 
+Date: Sept/Oct 2016
 
 -- Thursday 15 september --
 Couldn't come to class today. Didn't understand what they had done in class. Borrowed CSS code of Vienna. Will look into it myself later.
