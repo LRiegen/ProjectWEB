@@ -3,48 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Registreer</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Inloggen</title>
 </head>
 
 <body>
     <header>
-        <nav id="main">
+        <a href="index.html"><img src="images/nslogo.svg" alt='logo website'></a>
+        <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+              <li>
+                <form>
+                  <label>
+                  <input id="zoek" type="search" required placeholder="Typ hier je zoekopdracht"></label>
+                </form>
+              </li>
+              <li>
+                <a href="logon.html"><img src="images/account.svg" alt="login"></a>
+              </li>
             </ul>
         </nav>
     </header>
-
+    <section>
+        <h1>Registreer nu op NS verhalen!</h1>
+    </section>
     <main>
         <form>
             <fieldset>
-                <legend>Persoonlijke gegevens</legend>
-                <label>Voornaam:
-                <input type="text" name="firstname"></label>
-                <label>Tussenvoegsel:
-                <input type="text" name="insertion"></label>
-                <label>Achternaam:
-                <input type="text" name="lastname"></label>
+                <legend>Persoonsgegevens</legend>
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required autofocus>
+
+                <label for="tussenvoegsel">Tussenvoegsel:</label>
+                <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" name="achternaam" id="achternaam" placeholder="Achternaam" required>
+                <label for="straatnaam">Straatnaam:</label>
+                <input type="text" name="straatnaam" id="straatnaam" placeholder="Straatnaam" required>
+                <label for="huisnummer">Huisnummer:</label>
+                <input type="number" name="huisnummer" id="huisnummer" required>
+
+                <label for="postcode">Postcode:</label>
+                <input type="text" name="postcode" id="postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="1234AA" required>
             </fieldset>
             <fieldset>
                 <legend>Contact</legend>
-                <label>E-mail:
-                <input type="text" name="email"></label>
-                <label>Straat:
-                <input type="text" name="street"></label>
-                <label>Huisnummer:
-                <input type="text" name="number"></label>
-                <label>Postcode:
-                <input type="text" name="postal"></label>
-                <label>Telefoonnummer:
-                <input type="text" name="phone"></label>
-                <label>Wachtwoord:
-                <input type="text" name="password"></label>
+                <label for="email">E-mailadres:</label>
+                <input type="email" name="email" id="email" placeholder="naam@email.nl" required>
+
+                <label for="telefoonnummer">Telefoonnummer:</label>
+                <input type="tel" name="telefoonnummer" id="telefoonnummer" pattern="\d*" required>
             </fieldset>
-            <input type="submit" value="Registreer">
+            <fieldset>
+                <legend>Wachtwoord</legend>
+                <label for="wachtwoord">Wachtwoord:</label>
+                <input type="password" name="wachtwoord" id="wachtwoord" required>
+
+                <label for="wachtwoordcorrectie">Herhaal wachtwoord:</label>
+                <input type="password" name="wachtwoordcorrectie" id="wachtwoordcorrectie" required>
+            </fieldset>
+            <input type="submit" value="Aanmelden">
         </form>
     </main>
+
     <script src="js/main.js"></script>
 </body>
 </html>

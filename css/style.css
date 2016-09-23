@@ -1,0 +1,413 @@
+/*csslint empty-rules:false, ids:false, outline-none:false, order-alphabetical:false, fallback-colors: false, unique-headings: false, box-model: false, box-sizing: false, qualified-headings: false, gradients: false, star-property-hack: false, import: false, universal-selector: false, unqualified-attributes: false, overqualified-elements: false*/
+
+/*
+==================================================
+                    CSS RESET
+    http://meyerweb.com/eric/tools/css/reset/
+                v2.0 | 20110126
+          License: none (public domain)
+===================================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/*=============FONT==============*/
+@font-face {
+    font-family: NS Sans;
+    src: url(../fonts/nssans__-webfont.ttf), format('ttf');
+}
+
+
+/*=============TOPBAR==============*/
+/* optimized for 35-60em screens */
+header {
+    align-items: baseline;
+    background: #fff;
+    box-shadow: 0 2px 0 0 rgba(7, 7, 33, .15);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+nav ul li {
+    align-self: center;
+    padding: 1em .5em;
+}
+nav ul li a {
+    color: #003082;
+    text-decoration: none;
+}
+/* code door Sander Noija */
+input[type=search] {
+    background-color: white;
+    background-image: url('images/zoeken.svg');
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position: right;
+    border: 2px solid #fff;
+    border-radius: 1px;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    height: 2.4em;
+    width: 15em;
+}
+input[type=search]:focus {
+    border: 2px solid #ccc;
+} /* einde code door Sander Noija */
+
+
+/*=============SPOTLIGHT==============*/
+body section {
+    background-image:url(images/thema_mobiel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18em;
+}
+body > section > a {
+    background-color: hsla(218, 100%, 25%, 0.7);
+    color: aliceblue;
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: auto;
+    padding: 2%;
+    text-decoration: none;
+    transform: translatex(-28.9vw) translateY(14vh);
+    width: 25%;
+}
+h5 {
+    background-color: #ffc917;
+    background-image: url(images/heart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    display: flex;
+    font-size: 0.8em;
+    margin: auto;
+    padding: 0.2em;
+    transform: translatex(-22vw) translateY(14.4vh);
+    width: 8.4vw;
+}
+
+/*=============FILTER AND SORT==============*/
+aside {
+    box-shadow: 0 2px grey;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    transform: translatey(-9vh);
+    width: 82vw;
+}
+aside > form {
+    background: #ffc917;
+    display:flex;
+    height: 7vh;
+    padding: 0.7em;
+    width: 40em;
+}
+aside form fieldset legend{
+    color: #003082;
+    font-size: 1em;
+}
+aside > form+form{
+    justify-content: flex-start;
+}
+form fieldset {
+    padding: 0.4em;
+    font-size: 0.8em;
+
+}
+aside > nav > ul > li > a {
+    box-shadow: 0 2px 0 0 aliceblue;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: underline;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    transform: translatey(1vh);
+    width: 26vw;
+}
+
+aside > nav > ul > li > a:hover{
+    box-shadow: 0 2px 0 0 deepskyblue;
+    color: deepskyblue;
+}
+
+
+/*=============ARTICLES==============*/
+body {
+    background: #eeeeee;
+    font: 400 16px/25px "NS Sans", "Segoe UI", Myriad, Verdana, sans-serif;
+    line-height: 1;
+    margin: 0;
+    width: 100vw;
+}
+h1 h2{
+    color: #003082;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 2.5em;
+}
+a:link {
+    text-decoration: none!important;
+}
+article p {
+    color:black;
+}
+main {
+    transform: translatey(-5vh);
+}
+main section {
+    align-content: space-between;
+    background: #eeeeee;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main section article {
+    background: #ffffff;
+    box-shadow: 0 2px 0 0 rgba(105,113,125,1);
+    height: auto;
+    align-items: baseline;
+    margin: 0.7vw;
+    width: 40vw;
+}
+main section h4 {
+    display: none;
+}
+.metadata > p {
+    color: goldenrod;
+    padding: 1vh;
+}
+article > h2 {
+    background-color: hsla(218, 100%, 25%, 1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    font-size: 1.3em;
+    height: 5vh;
+    justify-content: center;
+    padding: 1.3vh;
+}
+article > p {
+    font-size: 0.8em;
+    padding: 2vh;
+}
+article > p + p {
+    padding: 1vw;
+    color:dodgerblue;
+    text-decoration: underline;
+}
+
+/*=====================================
+                  PC
+=====================================*/
+@media screen and (min-width: 60em) {
+    main section article {
+        background: #ffffff;
+        box-shadow: 0 2px 0 0 rgba(105,113,125,1);
+        height: auto;
+        align-items: baseline;
+        margin: 0.7vw;
+        max-width: 25vw;
+}
+    h2 {
+        background-image: url('images/header3.jpg');
+    }
+    aside > form {
+        background: #ffc917;
+        display:flex;
+        height: 7vh;
+        padding: 0.7em;
+        width: 39vw;
+}
+    aside {
+        width: 78vw;
+    }
+
+    aside > nav > ul > li > a {
+        width: 26vw;
+    }
+    body > section > a {
+        font-size: 2.4rem;
+        transform: translatex(-26.6vw) translateY(10vh);
+        width: 25%;
+}
+    h5 {
+        font-size: 0.9em;
+        transform: translatex(-18.7vw) translateY(10vh);
+        padding: 0.3em;
+        width: 9vw;
+}
+}
+
+
+/*=====================================
+                MOBILE
+=====================================*/
+@media screen and (max-width: 35em) {
+
+    header {
+        align-content: space-around;
+        align-items: baseline;
+        background: #fff;
+        display: flex;
+        flex-direction: row;
+        height: 3.6vh;
+        width: 100%;
+}
+    header > a {
+        transform: translateY(0.4vh);
+    }
+    nav  a  img{
+        vertical-align: top;
+}
+    input[type=search]{
+        font-size: 0.7em;
+        height: 3.4vh;
+        width: 65vw;
+    }
+    #spotlight {
+        height:10vh;
+        padding: 0;
+        margin: 0;
+    }
+    body > section > a {
+        background-color: hsla(218, 100%, 25%, 0.7);
+        color: aliceblue;
+        display: flex;
+        font-size: 0.8rem;
+        justify-content: center;
+        text-decoration: none;
+        transform: translatey(4vh) translateX(-20vw);
+        width: 40%;
+        padding: 0.2;
+}
+    h5 {
+        display: flex;
+        padding: 0.2;
+        width: 25%;
+        transform: translatey(4vh) translatex(-13vw);
+}
+
+    aside {
+        background: #ffc917;
+        height: auto;
+        width: 98vw;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        transform: translate(0);
+}
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        height: 7vw;
+}
+    aside > nav ul li {
+        align-self: auto;
+        padding: 0;
+}
+    nav ul li a {
+        color: #003082;
+        text-decoration: none;
+}
+    aside > form {
+        background: #ffc917;
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+        padding: 0.3 0.6em;
+        width: 100vw;
+}
+    form fieldset {
+        font-size: 0.7em;
+
+}
+    aside > form+form{
+        height: auto;
+        margin: 0;
+        padding: 0.3 0.6em;
+        width: 100vw;
+}
+    main {
+        transform: translate(0);
+    }
+    main section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+}
+    main section article {
+        width: 98vw;
+    }
+}
+    main article h2 {
+        font-size: 1em;
+        height: auto;
+        padding: 0.3em;
+}
+    main section article p {
+        font-size: 0.7em;
+        padding: 1vh;
+        margin: 0;
+}

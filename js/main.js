@@ -8,3 +8,9 @@ function like() {
 }
 
 like();
+
+function goBack() {
+    window.history.back();
+}
+
+goBack();

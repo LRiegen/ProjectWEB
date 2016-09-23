@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+<!-- Thanks to Vienna and Victor of V1-03 for helping me and to Sander for lending me his code.-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,20 +10,51 @@
 
 <body>
     <header>
-       <img src="images/logo.png" alt='logo website'>
-        <nav id="navmain">
-<!-- Used Log ON to link to the registration page. Should be log in (and if you don't have an account yet, that should link to registration page from there.-->
-        <form>
-<!-- Thanks Victor Zumpolle to helping me fix the thing below!-->
-            <label for="zoek">Zoeken</label><input id="zoek" type="search" required placeholder="Zoeken">
-                <input type="image" src="images/zoek.jpg" alt="Zoek">
-        </form>
-        <a href="logon.html"><img src="images/login.jpg" alt="login">Registreer</a>
+        <a href="index.html"><img src="images/nslogo.svg" alt='logo website'></a>
+        <nav>
+            <ul>
+              <li>
+                <form>
+                  <label>
+                  <input id="zoek" type="search" required placeholder="Typ hier je zoekopdracht"></label>
+                </form>
+              </li>
+              <li>
+                <a href="logon.html"><img src="images/account.svg" alt="login"></a>
+              </li>
+            </ul>
         </nav>
     </header>
 
+    <section id="spotlight">
+            <h5>Uitgelicht</h5>
+            <a href="stories86b.html">
+                <article>
+                    <h3>Boers</h3>
+                </article>
+            </a>
+    </section>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="stories87.html">Verder lezen</a></li>
+                <li><a href="stories90.html">Favorieten</a></li>
+                <li><a href="stories91.html">Gelezen</a></li>
+            </ul>
+        </nav>
+    </aside>
+
     <aside>
         <form>
+            <fieldset>
+                <legend>Sorteer op:</legend>
+                <label>Populair<input type="radio" name="sorteer" value="populair" checked></label>
+                <label>A-Z<input type="radio" name="sorteer" value="alfabet"></label>
+                <label>Recent<input type="radio" name="sorteer" value="recent"></label>
+                <input type="submit" value="Sorteer!">
+            </fieldset>
+<!-- THIS IS HOW IT SHOULD BE, BUT NOT STYLABLE
             <fieldset>
                 <legend>Sorteer op:</legend>
                 <input type="radio" name="sorteer" value="populair" checked>
@@ -37,113 +69,91 @@
                 <input type="checkbox" name="filter" value="nonfictie">
                 <input type="submit" value="Filter!">
             </fieldset>
-
-        </form>
-
-                <nav id="personal">
-            <ul>
-                <li><a href="stories/stories87.html">Verder lezen</a></li>
-                <li><a href="stories/stories90.html">Favorieten</a></li>
-                <li><a href="stories/stories91.html">Gelezen</a></li>
-            </ul>
-        </nav>
-<!-- Keep this or nah? I say nah.
-        <nav id="recent">
-            <ul>
-                <li><a href="stories97.html">Freudiaans</a></li>
-                <li><a href="stories96.html">Steenkolenfrans</a></li>
-                <li><a href="stories95.html">Martin Bril</a></li>
-            </ul>
-        </nav>
-
-        <nav id="rated">
-            <ul>
-                <li><a href="stories98.html">Beroemd</a></li>
-                <li><a href="stories93.html">Nico Dijkshoorn die Mart Smeets imiteert</a></li>
-                <li><a href="stories92.html">Vergezocht</a></li>
-            </ul>
-        </nav>
-
-        <nav id="friends">
-            <ul>
-                <li><a href="stories97.html">Freudiaans</a></li>
-                <li><a href="stories96.html">Steenkolenfrans</a></li>
-                <li><a href="stories95.html">Martin Bril</a></li>
-            </ul>
-        </nav>
 -->
+        </form>
+        <form>
+            <fieldset>
+                <legend>Filter op:</legend>
+                <label>Avontuur<input type="checkbox" name="filter" value="avontuur"></label>
+                <label>Fictie<input type="checkbox" name="filter" value="fictie"></label>
+                <label>Gedicht<input type="checkbox" name="filter" value="nonfictie"></label>
+                <input type="submit" value="Filter!">
+            </fieldset>
+        </form>
     </aside>
 
-       <main>
+    <main>
         <section id="stories">
-            <h3>Kies een verhaal dat je wilt lezen!</h3>
+            <h4>Kies een verhaal dat je wilt lezen!</h4>
 
-            <a href="stories/stories92.html">
+            <a href="stories92.html">
                <article>
                     <h2>Vergezocht</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>Het was in de omstreken van een gure februaridag rond het middaguur. Mijn zoon lag in zijn kinderwagen te slapen als een oude jamaicaan die teveel Rum achter de [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories91.html">
+            <a href="stories91.html">
                 <article>
                     <h2>Zoon</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>Vroem. Tuut tuut. Whèèèh!! Die! Die! Whèèèh! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Whèèèh. Die! Die! Papa? [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories90.html">
+            <a href="stories90.html">
                 <article>
                     <h2>Telegrafisch</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND MENSEN IN ZICHZELF GEKEERD STOP [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories89.html">
+            <a href="stories89.html">
                 <article>
                     <h2>Zombie</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>Duizenden hongerige ondoden lopen zielloos over het stationsplein. Op zoek naar voedsel, naar half vergane hondenlijken, naar vers mensenvlees. Het is gekkenwerk dat [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories88.html">
+            <a href="stories88.html">
                 <article>
                     <h2>Klumperbeven</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>TIk bus de stap uit en been met gepaste zwind over het stationsplein. In mijn zoon ligt de kinderwagen te slapen. Het pijpt regenstelen en er guurt een winderige waai. De [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories87.html">
+            <a href="stories87.html">
                 <article>
                     <h2>Code</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
+                    <p>Kraak de code en win een romantisch etentje met de verwarde man. In kwellende situaties toveren apen pennenvruchten uit invloedrijke tapijthandelaren. De engelen [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
-            <a href="stories/stories86.html">
+            <a href="stories86.html">
                 <article>
                     <h2>Alwetende verteller</h2>
                     <footer class="metadata">
                         <p>Molovich, <time>2011</time></p>
                     </footer>
-                </article>
-            </a>
-        </section>
-
-        <section id="spotlight">
-            <h3>Uitgelicht verhaal</h3>
-            <a href="stories/stories86b.html">
-                <article>
-                    <h2>Boers</h2>
-                    <footer class="metadata">
-                        <p>Molovich, <time>2011</time></p>
-                    </footer>
+                    <p>Kijk, daar gaat Max J. Molovich. Hij is net uit de bus gestapt en loopt nu achter een gifgroene kinderwagen waarin zijn zoon ligt te slapen. Zie ‘m daar toch dapper [...]</p>
+                    <p> > Lees verder</p>
                 </article>
             </a>
         </section>

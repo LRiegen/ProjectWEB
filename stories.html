@@ -2,21 +2,41 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Verhaal</title>
 </head>
 
+<body>
+     <header>
+      <a href="index.html">Home<img src="images/nslogo.svg" alt='logo website'></a>
+      <nav>
+        <ul>
+          <li>
+            <form>
+              <label for="zoek">Zoeken</label>
+              <input id="zoek" type="search" required placeholder="Typ hier je zoekopdracht">
+            </form>
+          </li>
+          <li>
+            <a href="logon.html">Account<img src="images/account.svg" alt="login"></a>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
 <body>
     <header>
         <nav id="main">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="logon.html">Log in</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../logon.html">Log in</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-    <a href="index.html">Terug</a>
+    <button type="button" onclick="goBack()">Terug</button>
     <section id="story">
         <h1>Beroemd</h1>
         <p id="rated">4 likes</p>
