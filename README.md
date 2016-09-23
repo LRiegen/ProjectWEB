@@ -19,5 +19,6 @@ FIXED: HTML + JS |||
 TO DO: CSS + images |||
 
 -- Friday 23 september --
-After over 18 hours of coding, I lack the energy to continue(it's now 3AM, yes this started at 9AM on Thursday). I took some shortcuts (display:block, floats. Yep.) because my brain was out of order. Now time for feedback! I didn't knew what to do with the forms tho... "Yay responsive". 
+After over 18 hours of coding, I lack the energy to continue(it's now 3AM, yes this started at 9AM on Thursday). I took some shortcuts (display:block, floats. Yep.) because my brain was out of order. Now time for feedback! I didn't knew what to do with the forms tho... "Yay responsive". Link to the thing:
+https://oege.ie.hva.nl/~riegenl001/WEB/index.html
 
