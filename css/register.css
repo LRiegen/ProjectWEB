@@ -99,7 +99,7 @@ header > a {
 /* code door Sander Noija */
 input[type=search] {
     background-color: white;
-    background-image: url('images/zoeken.svg');
+    background-image: url('../images/zoeken.svg');
     background-repeat:no-repeat;
     background-size: contain;
     background-position: right;
@@ -117,7 +117,7 @@ input[type=search]:focus {
 
 /*=============BODY==============*/
 body section {
-    background-image:url(images/thema_mobiel.jpg);
+    background-image: url('../images/thema_mobiel.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
