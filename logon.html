@@ -31,27 +31,17 @@
         <form>
             <fieldset>
                 <legend>Persoonsgegevens</legend>
-                <label for="voornaam">Voornaam:</label>
+                <label for="voornaam">Naam:</label>
                 <input type="text" name="voornaam" id="voornaam" placeholder="Voornaam" required autofocus>
-
-                <label for="tussenvoegsel">Tussenvoegsel:</label>
-                <input type="text" name="tussenvoegsel" id="tussenvoegsel">
-
-                <label for="achternaam">Achternaam:</label>
-                <input type="text" name="achternaam" id="achternaam" placeholder="Achternaam" required>
-                <label for="straatnaam">Straatnaam:</label>
-                <input type="text" name="straatnaam" id="straatnaam" placeholder="Straatnaam" required>
-                <label for="huisnummer">Huisnummer:</label>
-                <input type="number" name="huisnummer" id="huisnummer" required>
-
                 <label for="postcode">Postcode:</label>
                 <input type="text" name="postcode" id="postcode" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="1234AA" required>
+                <label for="huisnummer">Huisnummer:</label>
+                <input type="number" name="huisnummer" id="huisnummer" required>
             </fieldset>
             <fieldset>
                 <legend>Contact</legend>
                 <label for="email">E-mailadres:</label>
                 <input type="email" name="email" id="email" placeholder="naam@email.nl" required>
-
                 <label for="telefoonnummer">Telefoonnummer:</label>
                 <input type="tel" name="telefoonnummer" id="telefoonnummer" pattern="\d*" required>
             </fieldset>
