@@ -163,6 +163,7 @@ main > form {
     width: 98vw;
 }
 main > form > fieldset {
+    background-color:silver;
     flex-direction: row;
     padding: 0.2em;
     width: 100vw;
@@ -179,7 +180,33 @@ label {
 }
 input {
     align-self: flex-end;
+    background-color: white;
     width: 60vw;
+}
+input:invalid:focus {
+  background-color: lavenderblush;
+}
+input:valid:focus {
+    background-color: honeydew;
+}
+input:valid {
+    animation: pulse_animation .3s;
+}
+input:invalid {
+    background-color: white;
+}
+input[type="submit"] {
+  background-color: dodgerblue;
+  color: aliceblue;
+  font-size: 1em;
+  width: 98vw;
+}
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.3); }
+}
+input:hover {
+  animation: pulse_animation .3s;
 }
 input[type="submit"] {
     background-color: dodgerblue;
@@ -187,7 +214,12 @@ input[type="submit"] {
     font-size: 1em;
     width: 98vw;
 }
-/*Na 18 uur lang coderen had ik geen puf meer om te worstelen met flex-box dus heb het even op de oude manier gedaan */
+fieldset:valid {
+    background-color: #ffc917;
+}
+
+/*
+Na 18 uur lang coderen had ik geen puf meer om te worstelen met flex-box dus heb het even op de oude manier gedaan
 label {
     width: 100%;
     position: relative;
@@ -202,6 +234,7 @@ input {
     display: block;
     font-size: 1em;
 }
+*/
 
 /*=====================================
                 TABLET
@@ -223,3 +256,6 @@ input {
 }
 }
 
+/*=====================================
+                ANIMATION
+=====================================*/
